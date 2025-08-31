@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC PLAYER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="playlist.svg" alt="playlist" id="playlist-img">
+        <h2>FEEL THE MUSIC</h2>
+        <img src="music.svg" alt="music" id="music-img">
+    </header>
+    <main>
+         <div class="left">
+<div class="song-image">
+
+</div>
+<div class="volume-div">
+    <div class="volume-img">
+        <img src="volume.svg" alt="volume" id="vol-svg">
+    </div>
+    <input type="range" id="volume-range" onchange="volume()"> 
+</div>
+         </div>
+         <div class="right">
+            <div class="details">
+                <h3 id="song-name">AZUL</h3>
+                <h5 id="song-singer">Guru Randhawa</h5>
+            </div>
+            <input type="range" id="song-duration" onchange="duration()">
+            <div class="controls">
+                <div class="prev-img">
+                     <img src="prev.svg" alt="prev" id="prev-img" onclick="previousSong()">
+                </div>
+            <div class="play-pause">
+                 <img src="play.svg" alt="play" id="play-pause" onclick="playPause()">
+            </div>
+                <div class="next-img">
+                    <img src="next.svg" alt="next" id="next-img" onclick="nextSong()">
+                </div>
+            </div>
+            </div>
+            <div class="playlist">
+                <div class="playlist-song">
+                  <img src="image.png" alt="img">
+                  <div class="song-details">
+                    <h2>AZUL</h2>
+                    <h3>Guru Randhawa</h3>
+                  </div>
+                </div>
+                <div class="playlist-song">
+                  <img src="image1.png" alt="img">
+                  <div class="song-details">
+                    <h2>Baby</h2>
+                    <h3>Justin Bieber</h3>
+                  </div>
+                </div>
+                <div class="playlist-song">
+                    <img src="image2.png" alt="img">
+                  <div class="song-details">
+                    <h2>Bandana</h2>
+                    <h3>Shubh</h3>
+                  </div>
+                </div>
+                <div class="playlist-song">
+                    <img src="image3.png" alt="img">
+                    <div class="song-details">
+                    <h2>Millionaire</h2>
+                    <h3>YO YO Honey Singh</h3>
+                  </div>
+                </div>
+                <div class="playlist-song">
+                    <img src="image4.png" alt="img">
+                  <div class="song-details">
+                    <h2>Off_Limits</h2>
+                    <h3>Parmish Verma</h3>
+                  </div>
+                </div>
+                <div class="playlist-song">
+                   <img src="image5.png" alt="img">
+                  <div class="song-details">
+                    <h2>Pardesiya</h2>
+                    <h3>Sonu Nigam, Krishankali Saha</h3>
+                  </div>
+                </div>
+            </div>
+        </main>
+    <script src="script.js"></script>
+</body>
+</html>
